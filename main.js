@@ -6,10 +6,10 @@ var mainWindow = null;
 app.on('ready', function () {
   mainWindow = new BrowserWindow({
     height: 505,
-    resizable: false,
+    resizable: true,
     title: 'j5/electron template',
     width: 595,
-	frame: false
+	frame: true
   });
 
   mainWindow.loadURL('file://' + __dirname + '/app/index.html');
