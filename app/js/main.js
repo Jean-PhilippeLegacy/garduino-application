@@ -17,11 +17,12 @@ process.__defineGetter__('stdin', function() {
 
 var board = new five.Board();
 var valueDiv = document.querySelector("#plantValue");
+valueDiv.innerHTML = "Connecting to sensor";
 
 board.on("ready",function(){
 	var sensor = new five.Sensor({
 		pin: "A0",
-		freq: 250,//emit data every 250ms
+		freq: 2500,//emit data every 250ms
 		threshold: 2
 	});
 
@@ -32,8 +33,23 @@ board.on("ready",function(){
 		  return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 		}
 
-		valueDiv.innerHTML = sensorInfo.map(1023,400,0,100);
+		graphValue = Math.floor(sensorInfo.map(1023,400,0,100));
+		valueDiv.innerHTML = "";
 		// wet 400 dry 1023
 		// JS mapping or re-maping
+		var ctx = document.getElementById("myChart");
+		var myChart = new Chart(ctx, {
+		    type: 'doughnut',
+		    data: {
+		        datasets: [{
+		            label: '# of Votes',
+		            data: [graphValue,100-graphValue],
+		            display:[
+		            'false',
+		            'no border'
+		            ]
+		        }]
+		    }
+		});
 	});
 });
