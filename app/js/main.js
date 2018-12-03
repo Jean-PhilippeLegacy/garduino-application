@@ -22,7 +22,7 @@ valueDiv.innerHTML = "Connecting to sensor";
 board.on("ready",function(){
 	var sensor = new five.Sensor({
 		pin: "A0",
-		freq: 2500,//emit data every 250ms
+		freq: 250,//emit data every 250ms
 		threshold: 2
 	});
 
