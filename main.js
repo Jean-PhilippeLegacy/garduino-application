@@ -1,5 +1,4 @@
-var app = require('app');
-var BrowserWindow = require('browser-window');
+const {app, BrowserWindow} = require("electron");
 
 var mainWindow = null;
 
@@ -9,7 +8,7 @@ app.on('ready', function () {
     resizable: true,
     title: 'j5/electron template',
     width: 320,
-	frame: true
+  frame: true
   });
 
   mainWindow.loadURL('file://' + __dirname + '/app/index.html');
