@@ -1,314 +1,38 @@
-@media screen and (min-width:1024px){
-	.webLogo{
-	  display: block;
-	}
-
-	.mobileLogo{
-		display: none;
-	}
-
-	header nav ul {
-    position: absolute;
-    display: block;
-    z-index: 100;
-    right: 0;
-    margin-right: 100px;
-}
-
-
-	header #top-section {
-    position: relative;
-}
-
-	/*NAV*/
-		header #top-section img {
-	    width: 40%;
-			margin-left: 30px;
-	  }
-
-		header #top-section button{
-			display: none;
-			}
-
-			header nav{
-		   top: 60px;
-			}
-
-
-			header ul li {
-				margin-left: 30px;
-		 }
-
-		header nav ul li {
-			color: #46464a;
-	    padding: 0px;
-	    font-size: 18px;
-	    float: left;
-	 }
-
-	 header nav ul li:nth-child(odd) {
-	    background-color: transparent;
-	}
-	/*END OF NAV*/
-
-	/*HEADER IMAGE*/
-	header nav{
-		position: absolute;
-		right: 0;
-	}
-
-	#main-img-section {
-	    margin-top: 0px;
-			height: 60vh;
-	}
-
-	header #top-section {
-	    background-color: transparent;
-	}
-	#main-img-section #main-img-text {
-	    margin-left: 75px;
-	}
-
-	#main-img-section #main-img-text {
-	    bottom: -80px;
-	}
-
-	#main-img-section #succulent-plant-main-img {
-	    right: 80px;
-	}
-
-	#main-img-section #main-img-text h2 {
-	    font-size: 139px;
-			line-height: 120px;
-	}
-
-	#main-img-section #main-img-text .rotate-90 {
-	    font-size: 35px;
-	    margin-top: 90px;
-	}
-
-
-	#main-img-section #main-img-text h2:last-child {
-	    font-size: 160px;
-	}
-	/*END OF HEADER IMAGE*/
-
-	/*END OF HEADER*/
-
-	#features-section{
-
-	    h2{
-	        font-size:50px;
-	        grid-column: 1/ -1;
-	    }
-
-			#key-features-crl-1{
-				grid-column: 1/4;
-			}
-
-			#key-features-crl-2{
-				grid-column: 5/8;
-			}
-
-			#key-features-crl-3{
-				grid-column: 9/-1;
-			}
-
-	    .key-features-circle{
-	        padding-top:50px;
-
-
-	        p{
-	            width:200px;
-	            height:200px;
-	            line-height:290px;
-	            font-size:55px;
-							margin: 30px 30px 10px 30px;
-	        }
-
-					.radial-progress {
-	            $circle-size: 200px;
-	            $circle-background: $dark;
-	            $circle-color: #a6cfcc;
-	            $inset-size: 150px; /*Change 50px*/
-	            $inset-color: #fbfbfb;
-	            $transition-length: 1s;
-	            $shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
-	            margin: 30px 30px 10px 30px;
-	            width: $circle-size;
-	            height: $circle-size;
-
-	            .circle {
-	                .mask.full{
-	                    .fill{
-	                    }
-	                }
-	                .mask, .fill{
-	                    width: $circle-size;
-	                    height: $circle-size;
-	                    position: absolute;
-	                    border-radius: 50%;
-	                }
-	                .mask, .fill {
-	                    -webkit-backface-visibility: hidden;
-	                    transition: -webkit-transform $transition-length;
-	                    transition: -ms-transform $transition-length;
-	                    transition: transform $transition-length;
-	                }
-	                .mask {
-	                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
-	                    .fill {
-	                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
-	                        background-color: $circle-color;
-	                    }
-	                }
-	            }
-	            .inset {
-	                width: $inset-size;
-	                height: $inset-size;
-	                position: absolute;
-	                margin-left: ($circle-size - $inset-size)/2;
-	                margin-top: ($circle-size - $inset-size)/2;
-	                background-color: $inset-color;
-	                border-radius: 50%;
-	            }
-	        }
-	    }
-
-	}
-
-		#how-it-works article h2 {
-		grid-column: 5 / -1;
-	 }
-
-	 #how-it-works img {
-	 display: block;
-	 grid-column: 1/2;
-	 width: 400px;
-	 margin-top: -500px;
-	 margin-left: -150px;
-}
-
-		#contact {
-    margin-top: 0px;
+@media screen and (min-width:1024px)
+{
+    .logo
+    {
+        display: block;
+				 width: 385px;
+				 margin: 0 auto;
+				 margin-bottom: 75px;
     }
 
-	#how-it-works article p {
-	    grid-column: 5/ -1;
-	}
+    #contactForm
+    {
+        [type=email]
+        {font-family: 'helvetica';
+				display: block;
+				width: 375px;
+				margin: 0 auto;
+				margin-bottom: 15px;
+ 				border-style: none;
+        }
 
-	#how-it-works article button {
-    grid-column: 7/10;
-}
-
-
-}
-
-	@media only screen and (min-width:1050px){
-		#main-img-section #succulent-plant-main-img {
-				right: 120px;
-		}
-
-	}
-
-	@media only screen and (min-width:1100px){
-		#main-img-section #succulent-plant-main-img {
-				right: 160px;
-		}
-
-	}
-
-	@media only screen and (min-width:1150px){
-		#main-img-section #succulent-plant-main-img {
-				right: 210px;
-		}
-	}
-
-	@media only screen and (min-width:1200px){
-		header nav ul.slideToggle {
-		 background-color: transparent;
-		 width: auto;
-  }
-
-		#main-img-section #succulent-plant-main-img {
-				right: 260px;
-		}
-
-
-		#features-section #key-features-crl-1 {
-		grid-column: 1/4;
-		}
-
-		#features-section #key-features-crl-2 {
-    grid-column: 5/8;
-		}
-
-		#features-section #key-features-crl-3 {
-    grid-column: 9/-1;
-		}
-
-		#how-it-works img {
-		width: 500px;
-		margin-top: -600px;
-		margin-left: -150px;
-   }
-
-	 #contact h2 {
-    grid-column: 1 / 6;
-		line-height: 100px;
+        [type=password]
+        {
+          font-family: 'helvetica';
+					display: block;
+					width: 375px;
+					margin: 0 auto;
+					margin-bottom: 15px;
+ 					border-style: none;
+        }
     }
 
-		#contact form {
-    margin-top: -100px;
-    grid-column: 6 / -1;
-    }
 
-		#contact form label {
-    font-size: 20px;
-		}
 
-		#contact form #submit {
-    grid-column: 1/5;
-		}
-
-		#contact form input, #contact form textarea, #contact form #submit {
-    margin-top: 0px
-		}
-
-		footer nav ul li {
-		 grid-column: span 1;
-		 margin-left: -425px;
-		 margin-top: -270px;
- 		}
-
-		.followUs {
-    text-align: center;
-    margin-top: -450px;
-    border-top: 5px solid #46464a;
-    grid-column: 1/6;
-		padding-top: 70px;
-		}
-
-		footer nav ul li p {
-    line-height: 80px !important;
-    color: #a6cfcc;
-    width: 75px;
-    height: 75px;
-    font-size: 50px !important;
-   }
-
-	}
-
-@media only screen and (min-width:1366px){
-
-	header nav ul {
-    margin-right: 200px;
- }
+		#getstarted h2 {
+    margin-top: 10px;
 }
-
-@media only screen and (min-width:1600px){
-
-	header nav ul {
-    margin-right: 350px;
- }
 }
