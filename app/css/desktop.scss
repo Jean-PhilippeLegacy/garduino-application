@@ -1,0 +1,38 @@
+@media screen and (min-width:1024px)
+{
+    .logo
+    {
+        display: block;
+				 width: 385px;
+				 margin: 0 auto;
+				 margin-bottom: 75px;
+    }
+
+    #contactForm
+    {
+        [type=email]
+        {font-family: 'helvetica';
+				display: block;
+				width: 375px;
+				margin: 0 auto;
+				margin-bottom: 15px;
+ 				border-style: none;
+        }
+
+        [type=password]
+        {
+          font-family: 'helvetica';
+					display: block;
+					width: 375px;
+					margin: 0 auto;
+					margin-bottom: 15px;
+ 					border-style: none;
+        }
+    }
+
+
+
+		#getstarted h2 {
+    margin-top: 10px;
+}
+}
