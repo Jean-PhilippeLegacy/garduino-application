@@ -35,11 +35,11 @@
 
   <div class="plantEx">
     <div class="row">
-      <div class="small-4 columns iconPlant">
+      <div class="small-12 medium-4 columns iconPlant">
         <img src="images/plant4.svg" alt="Plant Line Art">
       </div>
 
-      <div class="small-8 columns">
+      <div class="small-12 medium-8 columns">
         <div class="textwrap">
           <h2>Barberton Daisy</h2>
           <h3>(Clivia Miniata)</h3>
@@ -55,17 +55,18 @@
 
 
 <div class="row">
-  <div class="vituals">
-    <h2 id="test">VITALS</h2>
+  <div class="vitals row">
+    <h2 class="small-12 columns">VITALS</h2>
+    <h3 class="small-12 columns" id="arduino-warning">No info from arduino. Please make sure it is connected.</h3>
+  
+    <h3 class="small-12 columns">Water</h3>
+    <canvas class="small-6 small-push-3 large-4 large-push-4 columns" id="myChart" width="300px" height="300px"></canvas>
 
-    <h3>Water</h3>
-    <canvas id="myChart" width="300" height="300"></canvas>
+    <h3 class="small-12 columns">Light</h3>
+    <canvas class="small-6 small-push-3 large-4 large-push-4 columns" id="myChart2" width="300" height="300"></canvas>
 
-    <h3>Light</h3>
-    <canvas id="myChart2" width="300" height="300"></canvas>
-
-    <h3>Fertilizer</h3>
-
+    <h3 class="small-12 columns">Fertilizer</h3>
+    <canvas class="small-6 small-push-3 large-4 large-push-4 columns end" id="myChart3" width="300" height="300"></canvas>
   </div>
 </div>
   <footer class="plantHistory">
