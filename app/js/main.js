@@ -16,20 +16,18 @@ process.__defineGetter__('stdin', function() {
 
 
 var board = new five.Board();
-var valueDiv = document.querySelector("#plantValue");
-valueDiv.innerHTML = "Connecting to sensor";
 
 board.on("ready",function(){
 	var sensor = new five.Sensor({
 		pin: "A0",
-		freq: 2500,//emit data every 250ms
-		threshold: 2
+		freq: 250,//emit data every 250ms
+		threshold: 20
 	});
 
-	var sensor2 = new five.Sensor({
+	var photoresistor = new five.Sensor({
 		pin: "A2",
-		freq: 250,//emit data every 250ms
-		threshold: 2
+		freq: 250,
+		threshold: 20
 	});
 
 	sensor.on("change", function(){
@@ -40,7 +38,6 @@ board.on("ready",function(){
 		}
 
 		graphValue = Math.floor(sensorInfo.map(1023,400,0,100));
-		valueDiv.innerHTML = "";
 		// wet 400 dry 1023
 		// JS mapping or re-maping
 		var ctx = document.getElementById("myChart");
@@ -68,7 +65,7 @@ board.on("ready",function(){
 		});
 	});
 
-	sensor2.on("change", function(){
+	photoresistor.on("change", function(){
 		var sensorInfo = this.value;
 
 		Number.prototype.map = function (in_min, in_max, out_min, out_max) {
@@ -76,8 +73,6 @@ board.on("ready",function(){
 		}
 
 		graphValue = Math.floor(sensorInfo.map(1023,0,0,100));
-		valueDiv.innerHTML = "";
-		// wet 400 dry 1023
 		// JS mapping or re-maping
 		var ctx = document.getElementById("myChart2");
 		var myChart = new Chart(ctx, {
