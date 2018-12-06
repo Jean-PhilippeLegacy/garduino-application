@@ -248,7 +248,7 @@ header{
 	}
 
 #addPlant{
-	width: 120px;
+	width: 220px;
 	margin: 0 auto;
 	display: block;
 	background-color: $secondaryColor;
@@ -262,7 +262,7 @@ header{
 	img{
 		float: left;
 		width: 20px;
-		margin-left: 5px;
+		margin-left: 45px;
 	}
 
 	p{
@@ -347,7 +347,7 @@ header{
 	}
 
 .add{
-	width: 120px;
+	width: 140px;
   height: 40px;
 
 	margin: 0 auto;
@@ -363,11 +363,14 @@ header{
 	img{
 		float: left;
 		width: 20px;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
+  p{
+    font-size: 14px;
+  }
 }
 	.remove{
-		width: 150px;
+		width: 140px;
     height: 40px;
 		margin: 0 auto;
 		display: block;
@@ -385,6 +388,9 @@ header{
 			width: 20px;
 			margin-left: 5px;
 		}
+    p{
+      font-size: 14px;
+    }
 }
 
 
@@ -501,8 +507,9 @@ input{
 
   img{
     width: 150px;
-
     padding-top: 20px;
+    margin: 0 auto;
+    display: inherit;
   }
 
   .textwrap{
@@ -514,7 +521,7 @@ input{
     font-family: 'neutra';
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size: 35px;
     color: $secondaryColor;
   }
 
@@ -522,7 +529,7 @@ input{
     font-family: 'neutra';
     font-weight: normal;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 30px;
     color: $primaryColor;
   }
 
@@ -530,9 +537,9 @@ input{
     font-family: 'neutra';
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 22px;
     text-align: left;
-
+    margin-top: 10px;
   }
 
   .name{
@@ -553,7 +560,7 @@ input{
   }
 }
 
-.vituals{
+.vitals{
   text-align: center;
   color: $secondaryColor;
 
@@ -580,6 +587,7 @@ input{
 
   a{
     color: $white;
+    font-size: 40px;
   }
 }
 
@@ -872,6 +880,7 @@ position: relative;
 }
 
 }
+
 
 @media only screen and (min-width:500px){
 

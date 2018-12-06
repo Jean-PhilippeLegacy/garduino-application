@@ -155,7 +155,7 @@ header nav {
     margin-top: 5px;
     margin-bottom: 5px; }
   #getstarted #addPlant {
-    width: 120px;
+    width: 220px;
     margin: 0 auto;
     display: block;
     background-color: #46464a;
@@ -168,7 +168,7 @@ header nav {
     #getstarted #addPlant img {
       float: left;
       width: 20px;
-      margin-left: 5px; }
+      margin-left: 45px; }
     #getstarted #addPlant p {
       margin-top: 3px;
       margin-left: 5px;
@@ -222,7 +222,7 @@ header nav {
     text-align: center;
     margin-bottom: 10px; }
   #myPlants .add {
-    width: 120px;
+    width: 140px;
     height: 40px;
     margin: 0 auto;
     display: block;
@@ -236,9 +236,11 @@ header nav {
     #myPlants .add img {
       float: left;
       width: 20px;
-      margin-left: 5px; }
+      margin-left: 10px; }
+    #myPlants .add p {
+      font-size: 14px; }
   #myPlants .remove {
-    width: 150px;
+    width: 140px;
     height: 40px;
     margin: 0 auto;
     display: block;
@@ -253,6 +255,8 @@ header nav {
       float: left;
       width: 20px;
       margin-left: 5px; }
+    #myPlants .remove p {
+      font-size: 14px; }
   #myPlants p {
     margin-top: 3px;
     margin-left: 5px;
@@ -321,27 +325,30 @@ header nav {
     padding: 0px; }
   .plantEx img {
     width: 150px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin: 0 auto;
+    display: inherit; }
   .plantEx .textwrap {
     margin-left: 20px; }
   .plantEx h2 {
     font-family: 'neutra';
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size: 35px;
     color: #46464a; }
   .plantEx h3 {
     font-family: 'neutra';
     font-weight: normal;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 30px;
     color: #a6cfcc; }
   .plantEx p {
     font-family: 'neutra';
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 15px;
-    text-align: left; }
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px; }
   .plantEx .name {
     text-align: center;
     background-color: #a6cfcc;
@@ -353,13 +360,13 @@ header nav {
       font-size: 30px;
       color: #fff; }
 
-.vituals {
+.vitals {
   text-align: center;
   color: #46464a; }
-  .vituals h2 {
+  .vitals h2 {
     font-size: 30px;
     margin-top: 50px; }
-  .vituals h3 {
+  .vitals h3 {
     font-size: 25px;
     margin-top: 50px; }
 
@@ -373,7 +380,8 @@ header nav {
   padding: 20px;
   font-size: 25px; }
   .plantHistory a {
-    color: #fff; }
+    color: #fff;
+    font-size: 40px; }
 
 .legend .round {
   border-radius: 50%;
@@ -573,6 +581,11 @@ header nav {
 @media only screen and (min-width: 600px) {
   .plantEx img {
     margin-left: 100px; } }
+@media only screen and (min-width: 768px) and (min-width: 767px) {
+  .plantEx img {
+    width: 197px;
+    height: 184px;
+    margin: 0 auto; } }
 @media only screen and (min-width: 1024px) and (min-width: 1024px) {
   .logo {
     display: block;

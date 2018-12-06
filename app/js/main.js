@@ -18,6 +18,7 @@ process.__defineGetter__('stdin', function() {
 var board = new five.Board();
 
 board.on("ready",function(){
+	document.querySelector("#arduino-warning").innerHTML = "";
 	var sensor = new five.Sensor({
 		pin: "A0",
 		freq: 250,//emit data every 250ms
@@ -61,6 +62,10 @@ board.on("ready",function(){
 		            ],
 		            borderWidth: 1
 		        }]
+		    },
+		    options:{
+		    	maintainAspectRatio:false,
+		    	responsive:false
 		    }
 		});
 	});
@@ -95,7 +100,39 @@ board.on("ready",function(){
 		            ],
 		            borderWidth: 1
 		        }]
+		    },
+		    options:{
+		    	maintainAspectRatio:false,
+		    	responsive:false
 		    }
 		});
 	});
+
+	var ctx = document.getElementById("myChart3");
+		var myChart = new Chart(ctx, {
+		    type: 'doughnut',
+		    data: {
+		        datasets: [{
+		            label: 'fertilizer',
+		            data: [40,60],
+		            backgroundColor: [
+		                'rgba(255, 99, 132, 0.2)',
+		                'rgba(54, 162, 235, 0.2)',
+		                'rgba(255, 206, 86, 0.2)',
+		                'rgba(75, 192, 192, 0.2)',
+		                'rgba(153, 102, 255, 0.2)',
+		                'rgba(255, 159, 64, 0.2)'
+		            ],
+		            display:[
+		            'false',
+		            'no border'
+		            ],
+		            borderWidth: 1
+		        }]
+		    },
+		    options:{
+		    	maintainAspectRatio:false,
+		    	responsive:false
+		    }
+		});
 });

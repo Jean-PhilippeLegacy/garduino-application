@@ -8,7 +8,7 @@ app.on('ready', function () {
     height: 800,
     resizable: true,
     title: 'j5/electron template',
-    width: 320,
+    width: 1200,
 	frame: true
   });
 
