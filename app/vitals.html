@@ -17,61 +17,139 @@
 
 <body>
 
-  <header>
-    <div id="top-section">
-      <img class="mobileLogo" src="images/logo.svg" alt="SQRoot logo">
-      <button id="button"></button>
+    <header>
+      <div id="top-section">
+        <img class="mobileLogo" src="images/logo.svg" alt="SQRoot logo">
+        <button id="button"></button>
+      </div>
+      <nav>
+        <h2 class="hide">Main navigation</h2>
+        <ul id="burgerMenu">
+          <li><a href="myplants.html">My Plants</a></li>
+          <li><a href="searchplant.html">Add Plant</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="plantEx">
+      <div class="row">
+        <div class="small-12 medium-4 columns iconPlant">
+          <img src="images/plant4.svg" alt="Plant Line Art">
+        </div>
+
+        <div class="small-12 medium-8 columns">
+          <div class="textwrap">
+            <h2 id="vital-top-header-name">Bruce the Plant</h2>
+            <h2>Barberton Daisy</h2>
+            <h3>(Clivia Miniata)</h3>
+            <p class="mobile-vital-text">Typically blooms in early spring. Takes up to 2 to 3 years to see your first bloom. These flowers last for the season and then need to be cut down to allow for new growth next season. Keep away from pets.</p>
+            <p class="desktop-vital-text"><span class="bold">Growing and Size:</span> The K.lily is fairly easy to grow (within a greenhouse, conservatory or house), if basic care instructions are followed (see below). They also enjoy a period of time outdoors at summertime, shaded. It can grow up to 18 inches in height and width once it's fully matured, although they are slow growers so expect two to five years, for full maturity.</p>
+            <p class="desktop-vital-text"><span class="bold">Blooming:</span> You can expect these to bloom early spring time, although some growers can get them to produce flowers at other times. They can also bloom sporadically at other times..earlier than spring or much later than spring. You will need some patience to see your first years bloom, which could be approximately 2 -3 years. The flowers last for a couple of days and then they should be removed (when they are deteriorating) to allow new growth and others to bloom. When they are in bloom, do avoid moving the plant.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="name">
+        <h2>Bruce the Plant</h2>
+      </div>
     </div>
-    <nav>
-      <h2 class="hide">Main navigation</h2>
-      <ul id="burgerMenu">
-        <li><a href="myplants.html">My Plants</a></li>
-        <li><a href="searchplant.html">Add Plant</a></li>
-      </ul>
-    </nav>
-  </header>
+
+    <div id="vital-divider-main-section"><h2>VITALS</h2></div>
 
 
+  <div class="large-6 columns">
+    <div class="vitals row">
+      <h2 class="small-12 columns">VITALS</h2>
+      <h3 class="small-12 columns" id="arduino-warning">No info from arduino. Please make sure it is connected.</h3>
+    
+      <canvas class="small-6 small-push-3 large-4 large-push-4 columns" id="myChart" width="300px" height="300px"></canvas>
+      <h3 class="small-12 columns">Water</h3>
 
-  <div class="plantEx">
-    <div class="row">
-      <div class="small-12 medium-4 columns iconPlant">
-        <img src="images/plant4.svg" alt="Plant Line Art">
+      <canvas class="small-6 small-push-3 large-4 large-push-4 columns" id="myChart2" width="300" height="300"></canvas>
+      <h3 class="small-12 columns">Light</h3>
+
+      <canvas class="small-6 small-push-3 large-4 large-push-4 columns end" id="myChart3" width="300" height="300"></canvas>
+      <h3 class="small-12 columns">Fertilizer</h3>
+    </div>
+  </div>
+
+  <div class="large-6 columns">
+    <div class="fullHistory">
+        <h2>Full History:<br>Bruce the Plant</h2>
       </div>
 
-      <div class="small-12 medium-8 columns">
-        <div class="textwrap">
-          <h2>Barberton Daisy</h2>
-          <h3>(Clivia Miniata)</h3>
-          <p>Typically blooms in early spring. Takes up to 2 to 3 years to see your first bloom. These flowers last for the season and then need to be cut down to allow for new growth next season. Keep away from pets.</p>
+      <div class="legend row">
+
+        <div class="small-2 spacer columns">
+        <div class="round1 round"></div>
+        </div>
+
+        <div class="small-2 spacer columns">
+        <h2>Water</h2>
+        </div>
+
+        <div class="small-2 spacer columns">
+        <div class="round2 round"></div>
+        </div>
+
+        <div class="small-2 spacer columns">
+        <h2>Light</h2>
+        </div>
+
+        <div class="small-2 spacer columns">
+        <div class="round3 round"></div>
+        </div>
+
+        <div class="small-2 spacer columns">
+        <h2>Fertilizer</h2>
+        </div>
+
+
+        </div>
+
+
+    <div id="history">
+      <div id="heightCenter">
+
+        <div class="row">
+
+        <div class="small-2  columns">
+        <img class="left" src="images/left.png" alt="Arrow">
+      </div>
+      <div class="small-8 columns">
+        <img class="graph" src="images/graph.png" alt="Plant Line Art">
+      </div>
+
+        <div class="small-2 columns">
+        <img class="right" src="images/right.png" alt="Arrow">
+    </div>
+      </div>
+
+      <div class="dates">
+        <p>Week of December 03 – 09 </p>
+      </div>
+
+      <div class="buttons row">
+
+        <div class="small-6 columns">
+        <div class="weekly">
+          <p>Weekly<br>View</p>
+        </div>
+      </div>
+
+        <div class="small-6 columns">
+        <div class="monthly">
+          <p>Monthly<br>View</p>
+        </div>
         </div>
       </div>
 
     </div>
-    <div class="name">
-      <h2>Bruce the Plant</h2>
     </div>
   </div>
-
-
-<div class="row">
-  <div class="vitals row">
-    <h2 class="small-12 columns">VITALS</h2>
-    <h3 class="small-12 columns" id="arduino-warning">No info from arduino. Please make sure it is connected.</h3>
-  
-    <h3 class="small-12 columns">Water</h3>
-    <canvas class="small-6 small-push-3 large-4 large-push-4 columns" id="myChart" width="300px" height="300px"></canvas>
-
-    <h3 class="small-12 columns">Light</h3>
-    <canvas class="small-6 small-push-3 large-4 large-push-4 columns" id="myChart2" width="300" height="300"></canvas>
-
-    <h3 class="small-12 columns">Fertilizer</h3>
-    <canvas class="small-6 small-push-3 large-4 large-push-4 columns end" id="myChart3" width="300" height="300"></canvas>
-  </div>
-</div>
-  <footer class="plantHistory">
-    <h2><a href="history.html">View plant history</a></h2>
-  </footer>
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
