@@ -17,89 +17,90 @@
 
 <body id="bgSet">
 
-  <header>
-    <div id="top-section">
-      <img class="mobileLogo" src="images/logo.svg" alt="SQRoot logo">
-      <button id="button"></button>
+    <header>
+      <div id="top-section">
+        <img class="mobileLogo" src="images/logo.svg" alt="SQRoot logo">
+        <button id="button"></button>
+      </div>
+      <nav>
+        <h2 class="hide">Main navigation</h2>
+        <ul id="burgerMenu">
+          <li><a href="myplants.html">My Plants</a></li>
+          <li><a href="searchplant.html">Add Plant</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <section id="settings">
+    <h1 class="hide">Settings</h1>
+    <div class="settingsHead">
+      <h2>Settings</h2>
     </div>
-    <nav>
-      <h2 class="hide">Main navigation</h2>
-      <ul id="burgerMenu">
-        <li><a href="myplants.html">My Plants</a></li>
-              <li><a href="searchplant.html">Add Plant</a></li>
-      </ul>
-    </nav>
-  </header>
 
-<section id="settings">
-  <h1 class="hide">Settings</h1>
-  <div class="settingsHead">
-    <h2>Settings</h2>
-  </div>
-
-  <h3 class="noti">Notifications</h3>
+    <h3 class="noti">Notifications</h3>
 
 
-<div class="setDesc row">
-  <div class="small-7 columns">
-    <h3>Daily Update</h3>
-  </div>
-
-  <div class="small-5 columns">
-  <div class="switch large">
-    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-    <label class="switch-paddle" for="largeSwitch">
-      <span class="show-for-sr"></span>
-    </label>
-  </div>
-</div>
-
-
-  <div class="small-7 columns">
-    <h3>Monthy Update</h3>
-  </div>
-
-  <div class="small-5 columns">
-  <div class="switch large">
-    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-    <label class="switch-paddle" for="largeSwitch">
-      <span class="show-for-sr"></span>
-    </label>
-  </div>
-</div>
-
-
-  <div class="small-7 columns">
-    <h3>Email</h3>
-  </div>
-
-  <div class="small-5 columns">
-  <div class="switch large">
-    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-    <label class="switch-paddle" for="largeSwitch">
-      <span class="show-for-sr"></span>
-    </label>
-  </div>
-</div>
-
-<div class="small-10 small-centered columns">
-    <input class="enterIn" email="email" type="email" id="email" size="30" placeholder="Email">
-</div>
+  <div class="setDesc row">
     <div class="small-7 columns">
-      <h3>Phone</h3>
+      <h3>Daily Update</h3>
     </div>
 
     <div class="small-5 columns">
     <div class="switch large">
-      <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-      <label class="switch-paddle" for="largeSwitch">
+      <input class="switch-input" id="dailyswitch" type="checkbox" name="exampleSwitch">
+      <label class="switch-paddle" for="dailyswitch">
         <span class="show-for-sr"></span>
       </label>
     </div>
   </div>
-      <input class="enterIn" email="email" type="email" id="email" size="30" placeholder="Phone">
-</div>
-</section>
+
+
+    <div class="small-7 columns">
+      <h3>Monthy Update</h3>
+    </div>
+
+    <div class="small-5 columns">
+    <div class="switch large">
+      <input class="switch-input" id="monthlySwitch" type="checkbox" name="exampleSwitch">
+      <label class="switch-paddle" for="monthlySwitch">
+        <span class="show-for-sr"></span>
+      </label>
+    </div>
+  </div>
+
+
+    <div class="small-7 columns">
+      <h3>Email</h3>
+    </div>
+
+    <div class="small-5 columns">
+    <div class="switch large">
+      <input class="switch-input" id="emailSwitch" type="checkbox" name="exampleSwitch">
+      <label class="switch-paddle" for="emailSwitch">
+        <span class="show-for-sr"></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="small-10 small-centered columns">
+      <input class="enterIn" email="email" type="email" id="email" size="30" placeholder="Email">
+  </div>
+      <div class="small-7 columns">
+        <h3>Phone</h3>
+      </div>
+
+      <div class="small-5 columns">
+      <div class="switch large">
+        <input class="switch-input" id="phoneSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="phoneSwitch">
+          <span class="show-for-sr"></span>
+        </label>
+      </div>
+    </div>
+        <input class="enterIn" email="email" type="email" id="email" size="30" placeholder="Phone">
+  </div>
+  </section>
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/what-input.js"></script>
 <script src="js/vendor/foundation.js"></script>
