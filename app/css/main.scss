@@ -318,18 +318,6 @@ header{
 
 }
 
-.right-plant{
-  display: none;
-}
-
-.left-plant{
-  display: none;
-}
-
-#vital-divider-main-section{
-  display: none;
-}
-
 #myPlants{
 	height: 100vh;
   background-repeat: no-repeat;
@@ -845,14 +833,6 @@ position: relative;
 //*End Of Bottom Part*//
 }
 
-.desktop-vital-text{
-  display: none;
-}
-
-#vital-top-header-name{
-  display: none;
-}
-
 @media only screen and (min-width:400px){
 .settingsHead{
   background-color: $white;
@@ -899,10 +879,6 @@ position: relative;
   }
 }
 
-}
-
-#under-search-image{
-  display: none;
 }
 
 
